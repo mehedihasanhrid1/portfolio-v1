@@ -167,6 +167,7 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  margin-top: -3rem;
 }
 
 .section__pic-container {
@@ -186,6 +187,16 @@ section {
 }
 
 .section__text__p1 {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.section_margin{
+  margin-bottom: 2rem;
+}
+
+.section_title{
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -318,6 +329,7 @@ section {
 
 #experience {
   position: relative;
+  margin-top: 2rem;
 }
 
 .experience-sub-title {
@@ -357,6 +369,7 @@ article .icon {
 
 #projects {
   position: relative;
+  margin-top: -4rem;
 }
 
 .color-container {
@@ -387,6 +400,8 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  margin-top: -2.5rem;
+  margin-bottom: -6rem;
 }
 
 .contact-info-upper-container {
@@ -472,12 +487,31 @@ footer p {
     margin: 0 5%;
   }
   .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
+    width: 300px;
+    height: 300px;
+    margin: 1rem auto 2rem;
   }
   .about-containers {
     margin-top: 0;
+  }
+  #about{
+    margin-top: 14rem;
+  }
+  #experience{
+    margin-top: 0rem;
+  }
+  #contact{
+    margin-top: 0.25rem;
+    margin-bottom: 0rem;
+  }
+  #projects{
+    margin-top: 0rem;
+  }
+  .section_margin{
+    margin-bottom: 0rem;
+  }
+  .footer-margin{
+    padding-bottom: 2rem;
   }
 }
 
@@ -521,8 +555,9 @@ footer p {
     text-align: center;
   }
   .section__pic-container {
+    padding-top: 1rem;
     width: auto;
-    height: 46vw;
+    height: 250px;
     justify-content: center;
   }
   .section__text__p2 {
@@ -534,4 +569,21 @@ footer p {
   .text-container {
     text-align: justify;
   }
+  #about{
+    margin-top: 8.5rem;
+  }
+  #experience{
+    margin-top: 0rem;
+  }
+  #contact{
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+  }
+  .section_margin{
+    margin-bottom: 0rem;
+  }
+  .footer-margin{
+    padding-bottom: 2rem;
+  }
+
 }
