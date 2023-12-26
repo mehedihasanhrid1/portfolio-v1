@@ -10,7 +10,7 @@
     <meta property="og:image" content="https://i.ibb.co/t4SLNVW/profile.jpg">
     <meta property="og:url" content="https://mehedihasanportfolio.vercel.app/">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="https://i.ibb.co/t4SLNVW/profile.jpg">
     <meta name="twitter:title" content="Tasksync Pro - Empowering Your Productivity Journey">
     <meta name="twitter:description" content="I'm Mehedi Hasan, a passionate Frontend Web Developer with a strong desire to create immersive digital experiences. Specializing in HTML5, CSS3, and React.js, I bring creativity and technical expertise to the forefront.">
     <meta name="twitter:image" content="https://i.ibb.co/t4SLNVW/profile.jpg">
@@ -18,7 +18,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <title>Portfolio - Mehedi Hasan</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="max-w-6xl mx-auto">
     <nav class="flex justify-between items-center ml-2 mr-3 md:mx-5 lg:mx-4 xl:mx-0 py-4" x-data="{open:false}">
@@ -50,7 +49,7 @@
               :class="{'translate-x-0 ease-in-opacity-100' :open===true, '-translate-x-full ease-out opacity-0' : open===false}">
               <div class="flex justify-between px-5 py-2">
                   <a class="text-2xl md:text-3xl -ml-4 font-medium text-gray-100" href="#">Mehedi Hasan</a>
-                  <button class="rounded-md hover:text-gray-400 lg:hidden text-gray-400" @click="open=false">
+                  <button class="rounded-md hover:text-gray-400 lg:hidden text-gray-400 -mr-3" @click="open=false">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                           class="bi bi-x-circle" viewBox="0 0 16 16">
                           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -103,48 +102,51 @@
           </div>
     </nav>
 
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile.png" alt="Mehedi Hasan profile picture" />
+    <section id="profile" class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-16 mt-3 md:mt-6 lg:mt-8 xl:mt-12 mb-10">
+      <div class="h-80 w-80 md:h-[23rem] md:w-[23rem] xl:h-[32rem] xl:w-[32rem] lg:h-[28rem] lg:w-[28rem]">
+        <img class="border-[6px] border-gray-300 rounded-full object-cover" src="./assets/profile.jpg" alt="Mehedi Hasan" />
       </div>
-      <div class="section__text">
-        <p class="text-3xl">Hello, I'm</p>
-        <h1 class="title">Mehedi Hasan</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
+      <div class="flex items-center justify-center flex-col">
+        <p class="text-2xl lg:text-3xl text-gray-700 font-medium mb-1 lg:mb-2">Hello, I'm</p>
+        <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-1">Mehedi Hasan</h1>
+        <p class="text-2xl lg:text-3xl font-semibold text-gray-800">React Frontend Developer</p>
+        <div class="flex items-center justify-center gap-4 my-4 lg:my-5">
           <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/mehedi-hasan-resume.pdf')"
+            class="px-5 py-2.5 bg-white text-gray-900 font-semibold border-2 rounded-3xl border-gray-800 hover:bg-gray-800 hover:text-white"
+            onclick="window.open('./Mehedi_Hasan_Resume.pdf')"
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="px-5 py-2.5 bg-gray-800 text-white font-semibold border-2 rounded-3xl border-gray-800 hover:bg-gray-900" onclick="location.href='./#contact'">
             Contact Info
           </button>
         </div>
-        <div id="socials-container">
+        <div class="flex items-center justify-center gap-5">
           <img
             src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
+            alt="LinkedIn"
+            class="h-12 w-12 cursor-pointer"
             onclick="location.href='https://www.linkedin.com/in/mehedi-hasan-hrid/'"
           />
           <img
             src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
+            alt="Github"
+            class="h-12 w-12 cursor-pointer"
             onclick="location.href='https://github.com/mehedihasanhrid1'"
           />
         </div>
       </div>
     </section>
+
+
+
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title section_margin">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about.jpg"
+            src="./assets/profile.jpg"
             alt="Profile picture"
             class="about-pic"
           />
