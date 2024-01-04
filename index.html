@@ -419,11 +419,27 @@
       <p class="text-center text-gray-700 font-medium text-xl md:text-2xl lg:text-3xl">Get in Touch</p>
       <h1 class="text-[33px] md:text-4xl lg:text-5xl font-bold text-center text-gray-900 md:mt-2">Contact Me</h1>
       <div class="mt-6 md:mt-8 lg:mt-10">
-        <!-- contact -->
+
+        <form action="" class="space-y-6 w-full">
+          <div>
+              <label htmlFor="email" class="block mb-2  font-medium text-gray-900 ">Your email</label>
+              <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-600 focus:border-gray-600 block w-full p-2.5" placeholder="name@gmail.com" required />
+          </div>
+          <div>
+              <label htmlFor="subject" class="block mb-2  font-medium text-gray-900 ">Subject</label>
+              <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-gray-600 focus:border-gray-600" placeholder="Let us know how I can help you" required />
+          </div>
+          <div class="sm:col-span-2">
+              <label htmlFor="message" class="block mb-2  font-medium text-gray-900 ">Your message</label>
+              <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-gray-600 focus:border-gray-600" placeholder="Leave a details message..."></textarea>
+          </div>
+          <button type="submit" class="py-3 px-5 lg:px-8 font-medium text-center rounded-lg text-lg bg-gray-900 sm:w-fit hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-600 text-white">Send message</button>
+      </form>
+        
       </div>
     </section>
     <footer>
-      <p class="py-5 text-center text-gray-700">Copyright &#169; 2023 Mehedi Hasan. All Rights Reserved.</p>
+      <p class="py-5 border-t border-gray-600 mt-5 lg:mt-8 text-center text-gray-700">Copyright &#169; 2023 Mehedi Hasan. All Rights Reserved.</p>
     </footer>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </body>
