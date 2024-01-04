@@ -34,7 +34,7 @@
     ></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
-      emailjs.init("user_your_emailjs_user_id");
+      emailjs.init("_2rF103ZTCvq2ARu-");
     </script>
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
     <title>Portfolio - Mehedi Hasan</title>
@@ -664,7 +664,7 @@
         Contact Me
       </h1>
       <div class="mt-4 lg:mt-8 mx-5 xl:mx-0">
-        <form action="" class="space-y-4 md:sp lg:space-y-6 w-full">
+        <form action="" id="form" class="space-y-4 md:sp lg:space-y-6 w-full">
           <div>
             <label
               htmlFor="name"
@@ -723,7 +723,8 @@
           </div>
           <button
             type="submit"
-            class="py-2.5 lg:py-3 px-4 md:px-5 lg:px-8 font-medium text-center rounded-lg md:text-lg bg-gray-900 sm:w-fit hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-600 text-white"
+            id="button"
+            class="py-2.5 px-4 md:px-5 lg:px-6 font-medium text-center rounded-lg md:text-lg bg-gray-900 sm:w-fit hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-600 text-white"
           >
             Send message
           </button>
@@ -788,5 +789,43 @@
       defer
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
+    <script type="text/javascript">
+      const btn = document.getElementById("button");
+      const form = document.getElementById("form");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const from_name = document.getElementById("name").value;
+        const to_name = "Mehedi Hasan";
+        const reply_to = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+
+        const data = {
+          from_name,
+          to_name,
+          subject,
+          reply_to,
+          subject,
+          message,
+        };
+
+        btn.textContent = "Sending...";
+
+        const serviceID = "service_pnp5o3f";
+        const templateID = "template_1zvbkqf";
+
+        emailjs.send(serviceID, templateID, data).then(
+          (response) => {
+            form.reset();
+            btn.textContent = "Send message";
+          },
+          (error) => {
+            btn.textContent = "Send message";
+            console.error("Email sending failed:", error);
+          }
+        );
+      });
+    </script>
   </body>
 </html>
