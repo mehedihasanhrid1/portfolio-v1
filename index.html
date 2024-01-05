@@ -12,10 +12,7 @@
     />
     <meta property="og:image" content="https://i.ibb.co/t4SLNVW/profile.jpg" />
     <meta name="twitter:card" content="https://i.ibb.co/t4SLNVW/profile.jpg" />
-    <meta
-      name="twitter:title"
-      content="Portfolio - Mehedi Hasan"
-    />
+    <meta name="twitter:title" content="Portfolio - Mehedi Hasan" />
     <meta
       name="twitter:description"
       content="I'm Mehedi Hasan, a passionate Frontend Web Developer with a strong desire to create immersive digital experiences. Specializing in HTML5, CSS3, and React.js, I bring creativity and technical expertise to the forefront."
@@ -28,9 +25,11 @@
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
     <script type="text/javascript">
       emailjs.init("_2rF103ZTCvq2ARu-");
     </script>
+
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
     <title>Portfolio - Mehedi Hasan</title>
   </head>
@@ -233,7 +232,9 @@
         <p class="text-2xl lg:text-3xl font-semibold text-gray-800">
           React Frontend Developer
         </p>
-        <div class="flex items-center justify-center gap-4 my-3 md:my-4 lg:my-5">
+        <div
+          class="flex items-center justify-center gap-4 my-3 md:my-4 lg:my-5"
+        >
           <button
             class="px-5 py-2.5 bg-white text-gray-900 font-semibold border-2 rounded-3xl border-gray-800 hover:border-gray-950 hover:bg-gray-900 hover:text-white"
             onclick="window.open('./Mehedi_Hasan_Resume.pdf')"
@@ -780,10 +781,12 @@
         </a>
       </div>
     </footer>
+
     <script
       defer
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
+
     <script type="text/javascript">
       const btn = document.getElementById("button");
       const form = document.getElementById("form");
@@ -811,7 +814,7 @@
         const templateID = "template_1zvbkqf";
 
         emailjs.send(serviceID, templateID, data).then(
-          (response) => {
+          (res) => {
             form.reset();
             btn.textContent = "Send message";
           },
